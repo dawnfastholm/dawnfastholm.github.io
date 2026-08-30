@@ -3,157 +3,358 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dawn Fastholm | Digital Systems, Language & Voice</title>
+  <title>Dawn Fastholm | Digital Systems, Language, AI & Voice</title>
 
   <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #1f1f1f;
+      --muted: #6d6d6d;
+      --line: #ddddda;
+      --card: #ffffff;
+      --accent: #3f5f72;
+      --tag: #ececea;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 50px 25px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      color: #222;
-      background: #fafafa;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 56px 24px 70px;
+    }
+
+    .hero {
+      padding-bottom: 34px;
+      border-bottom: 1px solid var(--line);
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      margin-top: 45px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: -0.04em;
     }
 
     .subtitle {
-      font-size: 20px;
-      color: #666;
-      margin-bottom: 35px;
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 26px;
     }
 
     .intro {
-      font-size: 18px;
+      font-size: 1.2rem;
+      max-width: 760px;
+      margin: 0;
     }
 
-    .skills {
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 0 0 18px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
+      margin-top: 18px;
     }
 
-    .skill {
-      background: #eee;
-      padding: 7px 12px;
-      border-radius: 20px;
+    .tag {
+      background: var(--tag);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .language-list {
+      display: grid;
+      gap: 10px;
+      margin: 18px 0 22px;
+    }
+
+    .language-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .language-row:last-child {
+      border-bottom: none;
+    }
+
+    .level {
+      color: var(--muted);
+    }
+
+    .contact {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #777;
+      padding-top: 34px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        padding: 38px 20px 50px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        font-size: 1.08rem;
+      }
+
+      h2 {
+        font-size: 1.55rem;
+      }
     }
   </style>
 </head>
 
 <body>
+  <main>
 
-  <h1>Dawn Fastholm</h1>
-  <div class="subtitle">
-    Digital Systems · IT Support · Language · AI · Voice
-  </div>
+    <header class="hero">
+      <h1>Dawn Fastholm</h1>
 
-  <p class="intro">
-    I have around 20 years of hands-on experience in IT administration,
-    technical support and digital systems. My work combines technical
-    problem-solving, communication and the ability to quickly understand
-    unfamiliar systems and workflows.
-  </p>
+      <div class="subtitle">
+        Digital Systems · Language · AI · Support · Voice
+      </div>
 
-  <h2>Digital & IT</h2>
+      <p class="intro">
+        I work at the intersection of digital systems, language, communication and problem-solving.
+        With around 20 years of hands-on experience in IT administration and support, I am used to
+        understanding complex systems quickly, identifying what is not working and explaining solutions clearly.
+      </p>
+    </header>
 
-  <div class="skills">
-    <span class="skill">Microsoft 365</span>
-    <span class="skill">IT Administration</span>
-    <span class="skill">Technical Support</span>
-    <span class="skill">Umbraco</span>
-    <span class="skill">Sitecore</span>
-    <span class="skill">Basic HTML</span>
-    <span class="skill">Adobe Creative Cloud</span>
-    <span class="skill">AI Tools</span>
-  </div>
+    <section>
+      <h2>Selected capabilities</h2>
 
-  <p>
-    I am experienced in troubleshooting, user support, digital administration
-    and explaining technical issues clearly to people with very different
-    levels of technical knowledge.
-  </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Language quality</h3>
+          <p>
+            Proofreading, localisation, wording, tone, linguistic nuance and evaluating written content.
+          </p>
+        </div>
 
-  <h2>Languages</h2>
+        <div class="card">
+          <h3>AI evaluation</h3>
+          <p>
+            Reviewing AI-generated content for accuracy, clarity, consistency, usefulness and natural language.
+          </p>
+        </div>
 
-  <p>
-    <strong>Danish:</strong> Native<br>
-    <strong>Swedish:</strong> Fluent<br>
-    <strong>English:</strong> Fluent
-  </p>
+        <div class="card">
+          <h3>Research & fact-checking</h3>
+          <p>
+            Finding reliable information, comparing sources, identifying inconsistencies and communicating conclusions clearly.
+          </p>
+        </div>
 
-  <p>
-    Danish is my native language. I grew up partly in Sweden and speak Swedish
-    fluently. English has been part of my life since childhood, as my mother is
-    English, and I am fluent in both written and spoken English.
-  </p>
+        <div class="card">
+          <h3>Digital problem-solving</h3>
+          <p>
+            Troubleshooting, user support, system administration and understanding digital workflows and integrations.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    Working naturally across these three languages has given me a strong sense
-    of linguistic nuance, tone, meaning and the differences between closely
-    related languages.
-  </p>
+    <section>
+      <h2>Languages</h2>
 
-  <h2>Language, AI & Communication</h2>
+      <div class="language-list">
+        <div class="language-row">
+          <strong>Danish</strong>
+          <span class="level">Native</span>
+        </div>
 
-  <p>
-    I am comfortable working with written language, proofreading, localisation,
-    evaluating wording and tone, researching information and assessing the
-    quality and accuracy of digital and AI-generated content.
-  </p>
+        <div class="language-row">
+          <strong>Swedish</strong>
+          <span class="level">Fluent</span>
+        </div>
 
-  <p>
-    My background in IT support has also trained me to analyse problems,
-    identify inconsistencies, find reliable information and communicate
-    conclusions clearly and precisely.
-  </p>
+        <div class="language-row">
+          <strong>English</strong>
+          <span class="level">Fluent</span>
+        </div>
+      </div>
 
-  <h2>Voice & Audio</h2>
+      <p>
+        Danish is my native language. I grew up partly in Sweden and speak Swedish fluently.
+        English has been part of my life since childhood, as my mother is English, and I am fluent
+        in both written and spoken English.
+      </p>
 
-  <p>
-    I am also a professional singer with extensive experience in recording and
-    performance. This has developed a strong ear for pronunciation, phrasing,
-    tone and spoken language.
-  </p>
+      <p>
+        Working naturally across these three languages has given me a strong sense of tone,
+        meaning, pronunciation and the subtle differences between closely related languages.
+      </p>
+    </section>
 
-  <p>
-    I am interested in voice-over, narration, e-learning, localisation,
-    speech-related AI projects and other professional voice work in Danish,
-    Swedish and English.
-  </p>
+    <section>
+      <h2>Digital & IT background</h2>
 
-  <h2>What I Bring</h2>
+      <p>
+        I have around 20 years of practical experience in IT administration, technical support
+        and digital systems. My background is hands-on rather than academic, built through
+        troubleshooting, independent learning and daily work with users, systems and suppliers.
+      </p>
 
-  <div class="skills">
-    <span class="skill">Problem Solving</span>
-    <span class="skill">Independent Work</span>
-    <span class="skill">Research</span>
-    <span class="skill">Quality Assurance</span>
-    <span class="skill">Language Awareness</span>
-    <span class="skill">Digital Systems</span>
-    <span class="skill">User Communication</span>
-    <span class="skill">Voice & Audio</span>
-  </div>
+      <div class="tags">
+        <span class="tag">Microsoft 365</span>
+        <span class="tag">IT Administration</span>
+        <span class="tag">Technical Support</span>
+        <span class="tag">Umbraco</span>
+        <span class="tag">Sitecore</span>
+        <span class="tag">Basic HTML</span>
+        <span class="tag">Adobe Creative Cloud</span>
+        <span class="tag">AI Tools</span>
+        <span class="tag">CMS</span>
+        <span class="tag">User Support</span>
+      </div>
+    </section>
 
-  <footer>
-    Professional portfolio · Dawn Fastholm
-  </footer>
+    <section>
+      <h2>Language, AI & communication</h2>
 
+      <p>
+        I am comfortable working with written language, proofreading, localisation,
+        evaluating wording and tone, researching information and assessing the quality
+        and accuracy of digital and AI-generated content.
+      </p>
+
+      <p>
+        My support background has trained me to look closely at details, understand context,
+        ask the right questions and communicate clearly with people who have very different
+        levels of technical knowledge.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Proofreading</span>
+        <span class="tag">Localisation</span>
+        <span class="tag">Language QA</span>
+        <span class="tag">AI Evaluation</span>
+        <span class="tag">Research</span>
+        <span class="tag">Fact-checking</span>
+        <span class="tag">Clear Communication</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Voice & audio</h2>
+
+      <p>
+        I am also a professional singer with extensive recording and performance experience.
+        This has developed a strong ear for pronunciation, phrasing, rhythm, tone and spoken language.
+      </p>
+
+      <p>
+        I am interested in voice-over, narration, e-learning, localisation, speech-related AI work
+        and other professional voice projects in Danish, Swedish and English.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Voice-over</span>
+        <span class="tag">Narration</span>
+        <span class="tag">Recording</span>
+        <span class="tag">Pronunciation</span>
+        <span class="tag">Spoken Language</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>What I bring</h2>
+
+      <div class="tags">
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Independent Work</span>
+        <span class="tag">Research</span>
+        <span class="tag">Quality Assurance</span>
+        <span class="tag">Language Awareness</span>
+        <span class="tag">Digital Systems</span>
+        <span class="tag">User Communication</span>
+        <span class="tag">Voice & Audio</span>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        Available for remote freelance, part-time and ongoing project work from Denmark.
+      </p>
+      <p>
+        Email:
+        <a href="mailto:YOUR-EMAIL-HERE">YOUR-EMAIL-HERE</a>
+      </p>
+    </section>
+
+    <footer>
+      Professional portfolio · Dawn Fastholm
+    </footer>
+
+  </main>
 </body>
 </html>
