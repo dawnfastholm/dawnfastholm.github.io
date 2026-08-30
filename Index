@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawn Fastholm | Digital Systems, Language & Voice</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 50px 25px;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 45px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 35px;
+    }
+
+    .intro {
+      font-size: 18px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      background: #eee;
+      padding: 7px 12px;
+      border-radius: 20px;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Dawn Fastholm</h1>
+  <div class="subtitle">
+    Digital Systems · IT Support · Language · AI · Voice
+  </div>
+
+  <p class="intro">
+    I have around 20 years of hands-on experience in IT administration,
+    technical support and digital systems. My work combines technical
+    problem-solving, communication and the ability to quickly understand
+    unfamiliar systems and workflows.
+  </p>
+
+  <h2>Digital & IT</h2>
+
+  <div class="skills">
+    <span class="skill">Microsoft 365</span>
+    <span class="skill">IT Administration</span>
+    <span class="skill">Technical Support</span>
+    <span class="skill">Umbraco</span>
+    <span class="skill">Sitecore</span>
+    <span class="skill">Basic HTML</span>
+    <span class="skill">Adobe Creative Cloud</span>
+    <span class="skill">AI Tools</span>
+  </div>
+
+  <p>
+    I am experienced in troubleshooting, user support, digital administration
+    and explaining technical issues clearly to people with very different
+    levels of technical knowledge.
+  </p>
+
+  <h2>Languages</h2>
+
+  <p>
+    <strong>Danish:</strong> Native<br>
+    <strong>Swedish:</strong> Fluent<br>
+    <strong>English:</strong> Fluent
+  </p>
+
+  <p>
+    Danish is my native language. I grew up partly in Sweden and speak Swedish
+    fluently. English has been part of my life since childhood, as my mother is
+    English, and I am fluent in both written and spoken English.
+  </p>
+
+  <p>
+    Working naturally across these three languages has given me a strong sense
+    of linguistic nuance, tone, meaning and the differences between closely
+    related languages.
+  </p>
+
+  <h2>Language, AI & Communication</h2>
+
+  <p>
+    I am comfortable working with written language, proofreading, localisation,
+    evaluating wording and tone, researching information and assessing the
+    quality and accuracy of digital and AI-generated content.
+  </p>
+
+  <p>
+    My background in IT support has also trained me to analyse problems,
+    identify inconsistencies, find reliable information and communicate
+    conclusions clearly and precisely.
+  </p>
+
+  <h2>Voice & Audio</h2>
+
+  <p>
+    I am also a professional singer with extensive experience in recording and
+    performance. This has developed a strong ear for pronunciation, phrasing,
+    tone and spoken language.
+  </p>
+
+  <p>
+    I am interested in voice-over, narration, e-learning, localisation,
+    speech-related AI projects and other professional voice work in Danish,
+    Swedish and English.
+  </p>
+
+  <h2>What I Bring</h2>
+
+  <div class="skills">
+    <span class="skill">Problem Solving</span>
+    <span class="skill">Independent Work</span>
+    <span class="skill">Research</span>
+    <span class="skill">Quality Assurance</span>
+    <span class="skill">Language Awareness</span>
+    <span class="skill">Digital Systems</span>
+    <span class="skill">User Communication</span>
+    <span class="skill">Voice & Audio</span>
+  </div>
+
+  <footer>
+    Professional portfolio · Dawn Fastholm
+  </footer>
+
+</body>
+</html>
